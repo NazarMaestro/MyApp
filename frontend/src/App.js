@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-       const res = await fetch(`${process.env.REACT_APP_API_URL}/api/hello`);
+       const res = await fetch(`${process.env.REACT_APP_API_URL}/api/greet`);
         const data = await res.json();
         setMessage(data.message);
       } catch (err) {
